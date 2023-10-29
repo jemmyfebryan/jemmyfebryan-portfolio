@@ -15,76 +15,74 @@ function Projects() {
       <Particle />
       <Container>
         <h1 className="project-heading">
-          My Recent <strong className="purple">Works </strong>
+          My Latest <strong className="green">Journey</strong>
         </h1>
         <p style={{ color: "white" }}>
-          Here are a few projects I've worked on recently.
+          I'd like to share recent journey I've been working on.
         </p>
         <Row style={{ justifyContent: "center", paddingBottom: "10px" }}>
           <Col md={4} className="project-card">
             <ProjectCard
-              imgPath={chatify}
+              imgPath={"https://picsum.photos/seed/"+Math.floor(Math.random()*1000).toString()+"/1080/686"}
               isBlog={false}
-              title="Chatify"
-              description="Personal Chat Room or Workspace to share resources and hangout with friends build with react.js, Material-UI, and Firebase. Have features which allows user for realtime messaging, image sharing as well as supports reactions on messages."
-              ghLink="https://github.com/soumyajit4419/Chatify"
-              demoLink="https://chatify-49.web.app/"
+              noRef={true}
+              title="Jemmy Febryan Portfolio website"
+              description="I designed and built my own personal website, handling both the front-end and back-end using the MERN stack, which includes MongoDB, Express.js, React.js, and Node.js. This website serves as a repository for my journey, recent projects, areas of expertise, and more."
+              tags={['JavaScript', 'MongoDB', 'Express.js', 'React.js', 'Node.js']}
+              // ghLink="https://github.com/soumyajit4419/Chatify"
+              // demoLink="https://chatify-49.web.app/"
             />
           </Col>
-
           <Col md={4} className="project-card">
             <ProjectCard
-              imgPath={bitsOfCode}
+              imgPath={"https://picsum.photos/seed/"+Math.floor(Math.random()*1000).toString()+"/1080/686"}
               isBlog={false}
-              title="Bits-0f-C0de"
-              description="My personal blog page build with Next.js and Tailwind Css which takes the content from makdown files and renders it using Next.js. Supports dark mode and easy to write blogs using markdown."
-              ghLink="https://github.com/soumyajit4419/Bits-0f-C0de"
-              demoLink="https://blogs.soumya-jit.tech/"
+              noRef={true}
+              title="4th National INTELLIGO Data Competition 2023"
+              description="I developed a model for Reinforcement Learning Human Feedback (RLHF) to address the challenges associated with shipping e-commerce products in Indonesia. This model comprises three components: Positive Negative Sentiment, Shipping Problem Classification, and a Human Feedback Model, which together form the core of my final RLHF solution."
+              tags={['Python', 'NLP', 'AI/ML']}
+              // ghLink="https://github.com/soumyajit4419/Chatify"
+              // demoLink="https://chatify-49.web.app/"
             />
           </Col>
-
           <Col md={4} className="project-card">
             <ProjectCard
-              imgPath={editor}
+              imgPath={"https://picsum.photos/seed/"+Math.floor(Math.random()*1000).toString()+"/1080/686"}
               isBlog={false}
-              title="Editor.io"
-              description="Online code and markdown editor build with react.js. Online Editor which supports html, css, and js code with instant view of website. Online markdown editor for building README file which supports GFM, Custom Html tags with toolbar and instant preview.Both the editor supports auto save of work using Local Storage"
-              ghLink="https://github.com/soumyajit4419/Editor.io"
-              demoLink="https://editor.soumya-jit.tech/"              
+              noRef={true}
+              title="4th National IFEST Data Analytics Competition 2023"
+              description="I devised a sentiment analysis model for detecting five emotions – Anger, Fear, Joy, Happiness, and Sadness – in Tweets. I conducted a comparative analysis, pitting my hybrid Transformer+CNN model against alternative models, ultimately achieving an impressive validation accuracy of 85.71%."
+              tags={['Python', 'NLP', 'AI/ML']}
             />
           </Col>
-
           <Col md={4} className="project-card">
             <ProjectCard
-              imgPath={leaf}
+              imgPath={"https://picsum.photos/seed/"+Math.floor(Math.random()*1000).toString()+"/1080/686"}
               isBlog={false}
-              title="Plant AI"
-              description="Used the plant disease dataset from Kaggle and trained a image classifer model using 'PyTorch' framework using CNN and Transfer Learning with 38 classes of various plant leaves. The model was successfully able to detect diseased and healthy leaves of 14 unique plants. I was able to achieve an accuracy of 98% by using Resnet34 pretrained model."
-              ghLink="https://github.com/soumyajit4419/Plant_AI"
-              demoLink="https://plant49-ai.herokuapp.com/"
+              noRef={true}
+              title="AI Psychological Test for Mahasiswa Wirausaha Staff Recruitment 2023"
+              description="I made a set of 30 psychological test questions and a Multi-Layer Perceptron (MLP) to train the model using responses from current staff in relation to their performance. Subsequently, I utilized this model to forecast the performance of potential new staff members."
+              tags={['Python', 'AI/ML']}
             />
           </Col>
-
           <Col md={4} className="project-card">
             <ProjectCard
-              imgPath={suicide}
+              imgPath={"https://picsum.photos/seed/"+Math.floor(Math.random()*1000).toString()+"/1080/686"}
               isBlog={false}
-              title="Ai For Social Good"
-              description="Using 'Natural Launguage Processing' for the detection of suicide-related posts and user's suicide ideation in cyberspace  and thus helping in sucide prevention."
-              ghLink="https://github.com/soumyajit4419/AI_For_Social_Good"
-              // demoLink="https://www.youtube.com/watch?v=dQw4w9WgXcQ&ab_channel=RickAstley" <--------Please include a demo link here
+              noRef={true}
+              title="20th National Big Data Competition 2023"
+              description="I developed a model for license plate number prediction based on images. I used cv2 for preprocessing the image dataset, followed by the construction of the model using a Convolutional Neural Network (CNN) architecture, achieving an accuracy of 97.89%."
+              tags={['Python', 'Computer Vision', 'AI/ML']}
             />
           </Col>
-
           <Col md={4} className="project-card">
             <ProjectCard
-              imgPath={emotion}
+              imgPath={"https://picsum.photos/seed/"+Math.floor(Math.random()*1000).toString()+"/1080/686"}
               isBlog={false}
-              title="Face Recognition and Emotion Detection"
-              description="Trained a CNN classifier using 'FER-2013 dataset' with Keras and tensorflow backened. The classifier sucessfully predicted the various types of emotions of human. And the highest accuracy obtained with the model was 60.1%.
-              Then used Open-CV to detect the face in an image and then pass the face to the classifer to predict the emotion of a person."
-              ghLink="https://github.com/soumyajit4419/Face_And_Emotion_Detection"
-              // demoLink="https://blogs.soumya-jit.tech/"      <--------Please include a demo link here 
+              noRef={true}
+              title="Fingerprint Recognition for Fingerprint Test Automation"
+              description="I created a Windows GUI application for fingerprint type recognition as part of automating fingerprint testing at Bimbel Gracia Malang. I utilized a Convolutional Neural Network to develop the model and implemented the program using Python with Tkinter."
+              tags={['Python', 'Computer Vision', 'AI/ML']}
             />
           </Col>
         </Row>

@@ -7,6 +7,8 @@ import Container from "react-bootstrap/Container";
 import { Link } from "react-router-dom";
 // import { CgGitFork } from "react-icons/cg";
 // import { ImBlog } from "react-icons/im";
+import { ImStatsDots } from "react-icons/im";
+// import { PiLineSegmentsBold } from "react-icons/pi";
 import {
   // AiFillStar,
   AiOutlineHome,
@@ -70,18 +72,18 @@ function NavBar() {
               </Nav.Link>
             </Nav.Item>
 
-            {/* <Nav.Item>
+            <Nav.Item>
               <Nav.Link
                 as={Link}
                 to="/project"
                 onClick={() => updateExpanded(false)}
               >
-                <AiOutlineFundProjectionScreen
+                <ImStatsDots
                   style={{ marginBottom: "2px" }}
                 />{" "}
-                My Journey
+                Journey
               </Nav.Link>
-            </Nav.Item> */}
+            </Nav.Item>
 
             {/* <Nav.Item>
               <Nav.Link
