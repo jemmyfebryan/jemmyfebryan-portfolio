@@ -31,10 +31,10 @@ function Home2() {
         >
           <Col md={12}>
             <h1 style={{ fontSize: "2.6em", paddingBottom: "50px"}}>
-              CHECK OUT MY <Link to="/project" className="purple" style={{textDecoration: 'none'}}>JOURNEY</Link>
+              CHECK OUT MY <Link to="/journey" className="purple" style={{textDecoration: 'none'}}>JOURNEY</Link>
             </h1>
             <p className="mobile-font" style={{textAlign: "justify"}}>
-              I've got plenty of stories to share about my journey. You can check out the work I've done and what I'm currently working on. Feel free to take a look at my <Link to="/project" className="purple" style={{textDecoration: 'none'}}>Journey</Link>
+              I've got plenty of stories to share about my journey. You can check out the work I've done and what I'm currently working on. Feel free to take a look at my <Link to="/journey" className="purple" style={{textDecoration: 'none'}}>Journey</Link>
             </p>
           </Col>
         </Row>

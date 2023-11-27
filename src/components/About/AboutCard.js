@@ -9,6 +9,11 @@ function AboutCard() {
     color: '#2596be'            // Changes the color to red
   };
 
+  const TeenupliveStyle = {
+    textDecoration: 'none',  // Removes the underline
+    color: '#ff0000'            // Changes the color to red
+  };
+
   // const containerStyle = {
   //   display: 'flex',
   //   justifyContent: 'center',
@@ -28,7 +33,7 @@ function AboutCard() {
             Hi, I am <span className="green">Jemmy Febryan </span>
             <br /> I am an under-graduate student in Mathematics at Brawijaya University.
             <br />
-            Additionally, I am currently part of <a href="https://braincore.id/" target="_blank" rel="noreferrer" style={linkStyle}>Braincore.id</a> as a Data Scientist.
+            Additionally, I am currently part of <a href="https://braincore.id/" target="_blank" rel="noreferrer" style={linkStyle}>Braincore.id</a> as a Data Scientist and Content Writer Volunteer at <a href="https://teenuplive.com/" target="_blank" rel="noreferrer" style={TeenupliveStyle}>Teenuplive</a>.
             <br />
             <br />
             These are my area of interests:

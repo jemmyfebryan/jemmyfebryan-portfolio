@@ -1,7 +1,7 @@
 import React from "react";
-import { Col, Row } from "react-bootstrap";
+import { Col, Row, Container } from "react-bootstrap";
+import { useNavigate } from "react-router-dom"
 import { CgCPlusPlus } from "react-icons/cg";
-import mandarinIcon from "../../Assets/mandarin.svg";
 import {
   DiJavascript1,
   DiReact,
@@ -12,6 +12,7 @@ import {
   DiJava,
 } from "react-icons/di";
 import { GiArtificialIntelligence } from "react-icons/gi"
+import { IoLanguage } from "react-icons/io5";
 import {
   TbPresentationAnalytics,
   TbSql
@@ -19,7 +20,9 @@ import {
 import {
   SiMysql,
   SiRstudio,
-  SiTensorflow
+  SiTensorflow,
+  SiFlask,
+  SiScikitlearn
 } from "react-icons/si"
 import { RiZhihuFill } from "react-icons/ri"
 import {
@@ -32,9 +35,16 @@ import {
 import { TbBrandGolang } from "react-icons/tb";
 
 function Techstack() {
+  const navigate = useNavigate();
+
+  const handleColumnClick = (link) => {
+    // Redirect to the specified route when the column is clicked
+    navigate(link);
+  };
+
   return (
     <Row style={{ justifyContent: "center", paddingBottom: "50px" }}>
-      <Col xs={4} md={2} className="tech-icons">
+      <Col xs={4} md={2} className="green tech-icons" onClick={() => handleColumnClick("/journey?q=AI/ML")}>
         <GiArtificialIntelligence />
         <br/><p style={{fontSize: "1rem"}}>AI & ML Developer</p>
       </Col>
@@ -42,7 +52,7 @@ function Techstack() {
         <TbPresentationAnalytics />
         <br/><p style={{fontSize: "1rem"}}>Data Analytics</p>
       </Col>
-      <Col xs={4} md={2} className="tech-icons">
+      <Col xs={4} md={2} className="green tech-icons" onClick={() => handleColumnClick("/journey?q=Python")}>
         <DiPython />
         <br/><p style={{fontSize: "1rem"}}>Python</p>
       </Col>
@@ -51,9 +61,14 @@ function Techstack() {
         <br/><p style={{fontSize: "1rem"}}>Tensorflow</p>
       </Col>
       <Col xs={4} md={2} className="tech-icons">
-        <DiJavascript1 />
-        <br/><p style={{fontSize: "1rem"}}>Javascript</p>
+        <SiScikitlearn />
+        <br/><p style={{fontSize: "1rem"}}>Scikit-learn</p>
       </Col>
+      <Col xs={4} md={2} className="green tech-icons" onClick={() => handleColumnClick("/journey?q=JavaScript")}>
+        <DiJavascript1 />
+        <br/><p style={{fontSize: "1rem"}}>JavaScript</p>
+      </Col>
+
       {/* <Col xs={4} md={2} className="tech-icons">
         <TbBrandGolang />
       </Col> */}
@@ -77,6 +92,10 @@ function Techstack() {
         <br/><p style={{fontSize: "1rem"}}>MongoDB</p>
       </Col>
       <Col xs={4} md={2} className="tech-icons">
+        <SiFlask />
+        <br/><p style={{fontSize: "1rem"}}>Flask</p>
+      </Col>
+      <Col xs={4} md={2} className="tech-icons">
         <SiRstudio />
         <br/><p style={{fontSize: "1rem"}}>RStudio</p>
       </Col>
@@ -84,8 +103,9 @@ function Techstack() {
         <CgCPlusPlus />
         <br/><p style={{fontSize: "1rem"}}>C++</p>
       </Col>
-      <Col xs={4} md={2} className="tech-icons">
-        <img src={mandarinIcon} width="100rem" style={{filter: "invert(1)"}}/>
+      <Col xs={4} md={2} className="green tech-icons" onClick={() => handleColumnClick("/journey?q=Mandarin")}>
+        <IoLanguage />
+        {/* <img src={mandarinIcon} width="100rem" style={{fill: "green", filter: "invert(1)"}}/> */}
         <br/><p style={{fontSize: "1rem"}}>Mandarin</p>
       </Col>
       {/* <Col xs={4} md={2} className="tech-icons">

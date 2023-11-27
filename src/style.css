@@ -352,8 +352,14 @@ button:focus {
 
 .home-about-section {
   position: relative;
-  padding-bottom: 70px !important;
+  padding-bottom: 100px !important;
   padding-top: 70px !important;
+}
+
+@media (max-width: 767px) {
+  .home-about-section {
+    padding-bottom: 150px
+  }
 }
 
 .home-about-description {
@@ -552,15 +558,31 @@ button:focus {
 
 .btn-primary {
   color: #fff !important;
-  background-color: #623686 !important;
-  border-color: #623686 !important;
+  /* background-color: #623686 !important;
+  border-color: #623686 !important; */
+  background-color: #559d5f !important;
+  border-color: #559d5f !important;
 }
 
 .btn-primary:hover {
   color: #fff !important;
-  background-color: #6d20c5d7 !important;
-  border-color: #6d20c5d7 !important;
+  /* background-color: #6d20c5d7 !important;
+  border-color: #6d20c5d7 !important; */
+  background-color: #95db9e !important;
+  border-color: #95db9e !important;
 }
+
+.btn-outline-primary {
+  color: #fff !important;
+  border-color: #fff !important;
+}
+
+.btn-outline-primary:hover {
+  color: #fff !important;
+  background-color: #95db9e !important;
+  /* border-color: #95db9e !important; */
+}
+
 .btn:focus {
   outline: none !important;
   box-shadow: none !important;
@@ -632,6 +654,21 @@ button:focus {
     padding-top: 0 !important;
   }
 }
+
+/* --------- */
+/* Demo */
+/* --------- */
+
+.demo-section {
+  position: relative !important;
+  padding-top: 110px !important;
+  padding-bottom: 1000px !important;
+  background-image: var(--section-background-color) !important;
+  color: white !important;
+}
+
+
+
 /* --------- */
 /* Resume */
 /* --------- */
@@ -778,5 +815,5 @@ button:focus {
 
 .content {
   position: relative; /* You can set the position to relative or absolute, depending on your layout */
-  z-index: 1; /* Set a higher z-index value for the content to appear in front of the particles */
+  z-index: 999; /* Set a higher z-index value for the content to appear in front of the particles */
 }

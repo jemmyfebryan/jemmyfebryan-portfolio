@@ -1,91 +1,139 @@
-import React from "react";
-import { Container, Row, Col } from "react-bootstrap";
+import React, { useState, useEffect, useRef } from "react";
+import { Container, Row, Col, Button } from "react-bootstrap";
+import { useLocation } from 'react-router-dom';
 import ProjectCard from "./ProjectCards";
 import Particle from "../Particle";
-import leaf from "../../Assets/Projects/leaf.png";
-import emotion from "../../Assets/Projects/emotion.png";
-import editor from "../../Assets/Projects/codeEditor.png";
-import chatify from "../../Assets/Projects/chatify.png";
-import suicide from "../../Assets/Projects/suicide.png";
-import bitsOfCode from "../../Assets/Projects/blog.png";
 
 function Projects() {
+
+  // Checking Query
+  const location = useLocation();
+  const searchParams = new URLSearchParams(location.search).get('q')
+
+  const [allProjects, setAllProjects] = useState([]);
+  const [filteredProjects, setFilteredProjects] = useState([]);
+  const [selectedTag, setSelectedTag] = useState(searchParams ? [searchParams] : []);
+  const hasMounted = useRef(false);
+
+  useEffect(() => {
+    if (!hasMounted.current) {
+      const fetchProjectsData = async () => {
+        try {
+          const response = await fetch("/projectsData.json");
+          const data = await response.json();
+          setAllProjects(data);
+          const filtered = data.filter((project) =>
+            selectedTag.every((tag) => project.tags.includes(tag))
+          );
+          setFilteredProjects(filtered);
+          // if (selectedTag.length === 0) {
+          // } else {
+          //   setFilteredProjects(data);
+          // }
+        } catch (error) {
+          console.error("Error fetching projects data:", error);
+        }
+      };
+
+      fetchProjectsData();
+      hasMounted.current = true;
+    }
+  }, [selectedTag]);
+
+  const getUniqueTags = () => {
+    const tagsSet = new Set();
+    allProjects.forEach((project) => {
+      project.tags.forEach((tag) => tagsSet.add(tag));
+    });
+    return Array.from(tagsSet).sort();
+  };
+
+  const handleTagFilter = (tag) => {
+    if (selectedTag.includes(tag) || tag === "All") {
+      // Deselect the tag if it's already selected
+      if (tag !== "All") {  // When it deselect button other than "All"
+        const newSelectedTag = selectedTag.filter(item => item !== tag)
+        setSelectedTag(newSelectedTag)
+        const filtered = allProjects.filter((project) =>
+          // project.tags.some((tag) => selectedTag.includes(tag))
+          newSelectedTag.every((tag) => project.tags.includes(tag))
+        );
+        setFilteredProjects(filtered);
+      } else {
+        setSelectedTag([]);
+        setFilteredProjects(allProjects);
+      }
+    } else {
+      // Filter projects based on the selected tag
+      const newSelectedTag = [...selectedTag, tag]
+      setSelectedTag(newSelectedTag)
+      // console.log(newSelectedTag)
+      const filtered = allProjects.filter((project) =>
+        // project.tags.includes(tag)
+        // project.tags.some((tag) => newSelectedTag.includes(tag))
+        newSelectedTag.every((tag) => project.tags.includes(tag))
+      );
+      // console.log(filtered)
+      setFilteredProjects(filtered);
+    }
+  };
+
   return (
     <Container fluid className="project-section">
-      <Particle />
-      <Container>
+      <Particle/>
+      <Container style={{position: "relative"}}>
         <h1 className="project-heading">
           My Latest <strong className="green">Journey</strong>
         </h1>
         <p style={{ color: "white" }}>
           I'd like to share recent journey I've been working on.
         </p>
+
+        {/* Filter buttons dynamically generated based on unique tags */}
+        <div style={{ marginBottom: "10px" }}>
+          <Button
+            variant={selectedTag.length === 0 ? "primary" : "outline-primary"}
+            onClick={() => handleTagFilter("All")}
+          >
+            Show All
+          </Button>{" "}
+          {getUniqueTags().map((tag) => (
+            <Button
+              key={tag}
+              variant={selectedTag.includes(tag) ? "primary" : "outline-primary"}
+              onClick={() => handleTagFilter(tag)}
+            >
+              {tag}
+            </Button>
+          ))}
+        </div>
+        
         <Row style={{ justifyContent: "center", paddingBottom: "10px" }}>
-          <Col md={4} className="project-card">
-            <ProjectCard
-              imgPath={"https://picsum.photos/seed/"+Math.floor(Math.random()*1000).toString()+"/1080/686"}
-              isBlog={false}
-              noRef={true}
-              title="Jemmy Febryan Portfolio website"
-              description="I designed and built my own personal website, handling both the front-end and back-end using the MERN stack, which includes MongoDB, Express.js, React.js, and Node.js. This website serves as a repository for my journey, recent projects, areas of expertise, and more."
-              tags={['JavaScript', 'MongoDB', 'Express.js', 'React.js', 'Node.js']}
-              // ghLink="https://github.com/soumyajit4419/Chatify"
-              // demoLink="https://chatify-49.web.app/"
-            />
-          </Col>
-          <Col md={4} className="project-card">
-            <ProjectCard
-              imgPath={"https://picsum.photos/seed/"+Math.floor(Math.random()*1000).toString()+"/1080/686"}
-              isBlog={false}
-              noRef={true}
-              title="4th National INTELLIGO Data Competition 2023"
-              description="I developed a model for Reinforcement Learning Human Feedback (RLHF) to address the challenges associated with shipping e-commerce products in Indonesia. This model comprises three components: Positive Negative Sentiment, Shipping Problem Classification, and a Human Feedback Model, which together form the core of my final RLHF solution."
-              tags={['Python', 'NLP', 'AI/ML']}
-              // ghLink="https://github.com/soumyajit4419/Chatify"
-              // demoLink="https://chatify-49.web.app/"
-            />
-          </Col>
-          <Col md={4} className="project-card">
-            <ProjectCard
-              imgPath={"https://picsum.photos/seed/"+Math.floor(Math.random()*1000).toString()+"/1080/686"}
-              isBlog={false}
-              noRef={true}
-              title="4th National IFEST Data Analytics Competition 2023"
-              description="I devised a sentiment analysis model for detecting five emotions – Anger, Fear, Joy, Happiness, and Sadness – in Tweets. I conducted a comparative analysis, pitting my hybrid Transformer+CNN model against alternative models, ultimately achieving an impressive validation accuracy of 85.71%."
-              tags={['Python', 'NLP', 'AI/ML']}
-            />
-          </Col>
-          <Col md={4} className="project-card">
-            <ProjectCard
-              imgPath={"https://picsum.photos/seed/"+Math.floor(Math.random()*1000).toString()+"/1080/686"}
-              isBlog={false}
-              noRef={true}
-              title="AI Psychological Test for Mahasiswa Wirausaha Staff Recruitment 2023"
-              description="I made a set of 30 psychological test questions and a Multi-Layer Perceptron (MLP) to train the model using responses from current staff in relation to their performance. Subsequently, I utilized this model to forecast the performance of potential new staff members."
-              tags={['Python', 'AI/ML']}
-            />
-          </Col>
-          <Col md={4} className="project-card">
-            <ProjectCard
-              imgPath={"https://picsum.photos/seed/"+Math.floor(Math.random()*1000).toString()+"/1080/686"}
-              isBlog={false}
-              noRef={true}
-              title="20th National Big Data Competition 2023"
-              description="I developed a model for license plate number prediction based on images. I used cv2 for preprocessing the image dataset, followed by the construction of the model using a Convolutional Neural Network (CNN) architecture, achieving an accuracy of 97.89%."
-              tags={['Python', 'Computer Vision', 'AI/ML']}
-            />
-          </Col>
-          <Col md={4} className="project-card">
-            <ProjectCard
-              imgPath={"https://picsum.photos/seed/"+Math.floor(Math.random()*1000).toString()+"/1080/686"}
-              isBlog={false}
-              noRef={true}
-              title="Fingerprint Recognition for Fingerprint Test Automation"
-              description="I created a Windows GUI application for fingerprint type recognition as part of automating fingerprint testing at Bimbel Gracia Malang. I utilized a Convolutional Neural Network to develop the model and implemented the program using Python with Tkinter."
-              tags={['Python', 'Computer Vision', 'AI/ML']}
-            />
-          </Col>
+          {filteredProjects.map((project) => (
+            <Col key={project.id} md={4} className="project-card">
+              <ProjectCard
+                // imgPath={`https://picsum.photos/seed/${Math.floor(
+                //   Math.random() * 1000
+                // ).toString()}/1080/686`}
+                imgPath={project.imgPath}
+                isBlog={false}
+                noRef={true}
+                title={project.title}
+                description={project.description}
+                tags={project.tags}
+              />
+            </Col>
+          ))}
         </Row>
+
+        {/* When there is no journey to show */}
+        {
+          filteredProjects.length === 0 ? (
+            <p style={{ color: "white", paddingTop: "40px", paddingBottom: "250px" }}>
+              Sorry, there is no journey that I can show you.
+            </p>
+          ) : null
+        }
       </Container>
     </Container>
   );

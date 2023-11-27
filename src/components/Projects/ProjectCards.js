@@ -19,11 +19,23 @@ function ProjectCards(props) {
   }
   return (
     <Card className="project-card-view">
-      <div style={{height: "200px"}}>
-        <Card.Img variant="top" src={props.imgPath} alt="card-img" />
+      <div style={{
+        height: "200px"
+      }}>
+        <Card.Img
+          variant="top"
+          src={props.imgPath ?? "nullCertificate.png"}
+          alt="card-img"
+          style={{
+            width: "100%",
+            height: "100%"
+          }}
+        />
       </div>
       <Card.Body>
-        <Card.Title>{props.title}</Card.Title>
+        <div style={{ height: "75px" }}>
+          <Card.Title>{props.title}</Card.Title>
+        </div>
         <Card.Text style={{ textAlign: "justify" }}>
           {props.description}
         </Card.Text>
