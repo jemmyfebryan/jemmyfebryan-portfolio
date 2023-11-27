@@ -31,9 +31,32 @@ function Home2() {
         >
           <Col md={12}>
             <h1 style={{ fontSize: "2.6em", paddingBottom: "50px"}}>
+              KNOW <Link to="/about" className="purple" style={{textDecoration: 'none'}}>ABOUT</Link> ME
+            </h1>
+            <p className="mobile-font"> {/* style={{textAlign: "justify"}} */}
+              Discover more about me by exploring details on who I am, my interests, and areas of expertise. Learn more <Link to="/about" className="purple" style={{textDecoration: 'none'}}>About</Link> me.
+            </p>
+          </Col>
+        </Row>
+        <hr
+          className="horizontal-line"
+          style={{
+            marginTop: "100px",
+            marginBottom: "100px"
+          }}
+        />
+        <Row
+          className="home-about-description"
+          style={{
+            marginLeft: "10%",
+            marginRight: "10%"
+          }}
+        >
+          <Col md={12}>
+            <h1 style={{ fontSize: "2.6em", paddingBottom: "50px"}}>
               CHECK OUT MY <Link to="/journey" className="purple" style={{textDecoration: 'none'}}>JOURNEY</Link>
             </h1>
-            <p className="mobile-font" style={{textAlign: "justify"}}>
+            <p className="mobile-font">
               I've got plenty of stories to share about my journey. You can check out the work I've done and what I'm currently working on. Feel free to take a look at my <Link to="/journey" className="purple" style={{textDecoration: 'none'}}>Journey</Link>
             </p>
           </Col>
@@ -54,7 +77,7 @@ function Home2() {
             <ul className="home-about-social-links">
               <li className="social-icons">
                 <a
-                  // href="#"
+                  href="https://github.com/jemmyfebryan"
                   target="_blank"
                   rel="noreferrer"
                   className="icon-colour  home-social-icons"

@@ -121,8 +121,11 @@ function Projects() {
                 //   Math.random() * 1000
                 // ).toString()}/1080/686`}
                 imgPath={project.imgPath}
-                isBlog={false}
-                noRef={true}
+                isGitHub={false}
+                ghLink={project.ghLink ?? ""}
+                noRef={project.noRef ?? true}
+                refLink={project.refLink ?? ""}
+                refName={project.refName ?? ""}
                 title={project.title}
                 description={project.description}
                 tags={project.tags}
