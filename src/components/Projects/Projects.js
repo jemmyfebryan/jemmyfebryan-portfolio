@@ -19,8 +19,10 @@ function Projects() {
     if (!hasMounted.current) {
       const fetchProjectsData = async () => {
         try {
-          const response = await fetch("/projectsData.json");
-          const data = await response.json();
+          const response = await fetch("projectsData.json");
+          const jsonText = await response.text(); // Get the raw JSON text
+          const data = JSON.parse(jsonText);
+          // const data = await response.json();
           setAllProjects(data);
           const filtered = data.filter((project) =>
             selectedTag.every((tag) => project.tags.includes(tag))
