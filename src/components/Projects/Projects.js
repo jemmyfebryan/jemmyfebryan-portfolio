@@ -3,7 +3,7 @@ import { Container, Row, Col, Button } from "react-bootstrap";
 import { useLocation } from 'react-router-dom';
 import ProjectCard from "./ProjectCards";
 import Particle from "../Particle";
-import { journeyData } from "./journey";
+import { journeyData } from "./journey.js";
 
 function Projects() {
 
