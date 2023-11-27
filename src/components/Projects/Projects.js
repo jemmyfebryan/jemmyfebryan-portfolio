@@ -3,6 +3,7 @@ import { Container, Row, Col, Button } from "react-bootstrap";
 import { useLocation } from 'react-router-dom';
 import ProjectCard from "./ProjectCards";
 import Particle from "../Particle";
+import journeyJSON from "../../Assets/journey.json";
 
 function Projects() {
 
@@ -19,10 +20,11 @@ function Projects() {
     if (!hasMounted.current) {
       const fetchProjectsData = async () => {
         try {
-          const response = await fetch("projectsData.json");
-          const jsonText = await response.text(); // Get the raw JSON text
-          const data = JSON.parse(jsonText);
+          // const response = await fetch(journeyJSON);
+          // const jsonText = response.text(); // Get the raw JSON text
+          // const data = JSON.parse(jsonText);
           // const data = await response.json();
+          const data = journeyJSON
           setAllProjects(data);
           const filtered = data.filter((project) =>
             selectedTag.every((tag) => project.tags.includes(tag))
