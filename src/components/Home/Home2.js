@@ -1,9 +1,9 @@
 import React from "react";
 import { Container, Row, Col } from "react-bootstrap";
 import { Link } from "react-router-dom"
-import Nav from "react-bootstrap/Nav";
-import myImg from "../../Assets/avatar.svg";
-import Tilt from "react-parallax-tilt";
+// import Nav from "react-bootstrap/Nav";
+// import myImg from "../../Assets/avatar.svg";
+// import Tilt from "react-parallax-tilt";
 import {
   AiFillGithub,
   AiOutlineTwitter,

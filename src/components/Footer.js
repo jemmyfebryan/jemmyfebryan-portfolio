@@ -1,14 +1,14 @@
 import React, { useState, useEffect } from 'react';
 import { Container, Row, Col } from "react-bootstrap";
-import {
-  AiFillGithub,
-  AiOutlineTwitter,
-  AiFillInstagram,
-} from "react-icons/ai";
-import { FaLinkedinIn } from "react-icons/fa";
+// import {
+//   AiFillGithub,
+//   AiOutlineTwitter,
+//   AiFillInstagram,
+// } from "react-icons/ai";
+// import { FaLinkedinIn } from "react-icons/fa";
 
 import { FirstRandText, SecondRandText } from './JFtext.js'
-import { First } from 'react-bootstrap/esm/PageItem.js';
+// import { First } from 'react-bootstrap/esm/PageItem.js';
 
 function Footer() {
   let date = new Date();
