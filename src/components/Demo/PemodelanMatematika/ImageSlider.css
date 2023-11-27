@@ -1,0 +1,18 @@
+.image-slider-container {
+    width: 80%;
+    margin: auto;
+  }
+  
+  .image-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+  }
+  
+  /* Adjust the left and right padding of the .slick-list element */
+  .slick-list {
+    padding-left: 20px; /* Adjust this value as needed */
+    padding-right: 20px; /* Adjust this value as needed */
+  }
+  

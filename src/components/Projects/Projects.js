@@ -4,6 +4,7 @@ import { useLocation } from 'react-router-dom';
 import ProjectCard from "./ProjectCards";
 import Particle from "../Particle";
 import { journeyData } from "./journey.js";
+// import { FirstRandText, SecondRandText } from './JFtext.js'
 
 function Projects() {
 
