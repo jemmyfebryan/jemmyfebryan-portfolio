@@ -1,6 +1,7 @@
 import React from "react";
 // import { Container, Row } from "react-bootstrap";
 import Card from "react-bootstrap/Card";
+import { Link } from "react-router-dom"
 // import { ImPointRight } from "react-icons/im";
 
 function AboutCard() {
@@ -52,7 +53,11 @@ function AboutCard() {
               - Computer Vision
             </li>
           </ul>
-          
+          <br />
+          <p className="mobile-font" style={{ textAlign: "justify" }}>
+            Check out my <Link to="/about/roadmap" style={{textDecoration: 'none', color: '#95db9e'}}>Learning Roadmap</Link>!
+          </p>
+
           <p style={{ color: "#8DAA91", paddingTop: "50px" }}>
             "Don't wait to be taught, be the first to learn."{" "}
           </p>
