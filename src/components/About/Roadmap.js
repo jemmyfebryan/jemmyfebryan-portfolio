@@ -15,7 +15,14 @@ function Roadmap() {
         src={Map}
         alt="Roadmap"
         // className="img-thumbnail"
-        style={{marginBottom:"50px", borderWidth:"5px", borderStyle:"ridge", opacity:"100%"}}
+        style={{
+            maxWidth: "100%",
+            height: "auto",
+            marginBottom: "75px",
+            borderWidth: "5px",
+            borderStyle: "ridge",
+            opacity: "100%",
+        }}
         // style={{ backgroundColor: '#28112B' }}
       />
     </Container>
