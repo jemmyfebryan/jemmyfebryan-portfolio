@@ -11,7 +11,10 @@ import {
   DiGit,
   DiJava,
 } from "react-icons/di";
-import { GiArtificialIntelligence } from "react-icons/gi"
+import {
+  GiArtificialIntelligence,
+  GiHumanPyramid
+} from "react-icons/gi"
 import { IoLanguage } from "react-icons/io5";
 import {
   TbPresentationAnalytics,
@@ -22,16 +25,15 @@ import {
   SiRstudio,
   SiTensorflow,
   SiFlask,
-  SiScikitlearn
-} from "react-icons/si"
-import { RiZhihuFill } from "react-icons/ri"
-import {
+  SiScikitlearn,
+  SiNextdotjs,
+  SiTableau,
   SiRedis,
   SiFirebase,
-  SiNextdotjs,
   SiSolidity,
   SiPostgresql,
-} from "react-icons/si";
+} from "react-icons/si"
+import { RiZhihuFill } from "react-icons/ri"
 import { TbBrandGolang } from "react-icons/tb";
 
 function Techstack() {
@@ -47,6 +49,10 @@ function Techstack() {
       <Col xs={4} md={2} className="green tech-icons" onClick={() => handleColumnClick("/journey?q=AI/ML")}>
         <GiArtificialIntelligence />
         <br/><p style={{fontSize: "1rem"}}>AI & ML Developer</p>
+      </Col>
+      <Col xs={4} md={2} className="green tech-icons" onClick={() => handleColumnClick("/journey?q=HR")}>
+        <GiHumanPyramid />
+        <br/><p style={{fontSize: "1rem"}}>Human Resources</p>
       </Col>
       <Col xs={4} md={2} className="tech-icons">
         <TbPresentationAnalytics />
@@ -73,12 +79,20 @@ function Techstack() {
         <TbBrandGolang />
       </Col> */}
       <Col xs={4} md={2} className="tech-icons">
-        <DiNodejs />
-        <br/><p style={{fontSize: "1rem"}}>Node.js</p>
+        <SiNextdotjs />
+        <br/><p style={{fontSize: "1rem"}}>Next.js</p>
       </Col>
       <Col xs={4} md={2} className="tech-icons">
         <DiReact />
         <br/><p style={{fontSize: "1rem"}}>React.js</p>
+      </Col>
+      <Col xs={4} md={2} className="tech-icons">
+        <SiTableau />
+        <br/><p style={{fontSize: "1rem"}}>Tableau</p>
+      </Col>
+      <Col xs={4} md={2} className="tech-icons">
+        <DiNodejs />
+        <br/><p style={{fontSize: "1rem"}}>Node.js</p>
       </Col>
       {/* <Col xs={4} md={2} className="tech-icons">
         <SiSolidity />

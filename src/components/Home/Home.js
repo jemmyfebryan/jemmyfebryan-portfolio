@@ -4,8 +4,17 @@ import homeLogo from "../../Assets/home-main.png";
 import Particle from "../Particle";
 import Home2 from "./Home2";
 import Type from "./Type";
+import { Link } from "react-router-dom";
+import JourneySlide from "./journeySlide";
+import ClientPartners from "./ClientPartners";
 
 function Home() {
+
+  const linkStyle = {
+    textDecoration: 'none',  // Removes the underline
+    color: '#2596be'            // Changes the color to red
+  };
+
   return (
     <section>
       <Container fluid className="home-section" id="home">
@@ -13,8 +22,8 @@ function Home() {
         <Container className="home-content content">
           <Row>
             <Col md={7} className="home-header">
-              <h1 style={{ paddingBottom: 15 }} className="heading">
-                Welcome to{" "}
+              <h1 style={{ paddingBottom: 5 }} className="heading">
+                Hi, I'm{" "}
                 {/* <span className="wave" role="img" aria-labelledby="wave">
                   👋🏻
                 </span> */}
@@ -22,16 +31,16 @@ function Home() {
 
               <h1 className="heading-name">
                 <strong className="main-name"> JEMMY FEBRYAN</strong>
-                's Vessel!
               </h1>
+              
+              <h4 className="heading-subname">
+                Chief Human Resources Officer at{" "}
+                <a href="https://braincore.id/" target="_blank" rel="noreferrer" style={linkStyle}>
+                  Braincore.id
+                </a>
+              </h4>
 
-              <div style={{ padding: 50, textAlign: "left" }}>
-                {/* <strong 
-                  className="heading-name main-name"
-                  style={{
-                    letterSpacing: "2.5px"
-                  }}
-                ><i>On Development . . .</i></strong> */}
+              <div style={{ paddingLeft: 45, paddingTop: 20, textAlign: "left", fontSize: "1em" }}>
                 <Type />
               </div>
             </Col>
@@ -48,8 +57,11 @@ function Home() {
           </Row>
         </Container>
       </Container>
+      {/* <JourneySlide /> */}
       <Home2 />
+      
     </section>
+    
   );
 }
 

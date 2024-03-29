@@ -51,6 +51,29 @@ button:focus {
   box-shadow: none !important;
 }
 
+.slider-container {
+  overflow-x: auto;
+  white-space: nowrap;
+}
+
+.slide {
+  display: inline-flex;
+  flex-direction: column; /* Stack text and image vertically */
+  align-items: center; /* Center items horizontally */
+  width: 300px; /* Adjust width as needed */
+  margin: 0 10px; /* Adjust margin as needed */
+}
+
+.slide h2 {
+  font-size: 1.2rem; /* Adjust font size as needed */
+  margin-bottom: auto; /* Adjust margin as needed */
+}
+
+.slide img {
+  max-width: 100%; /* Ensure images don't exceed their container */
+  height: auto; /* Maintain aspect ratio */
+}
+
 /* --------- */
 /*  Preloader */
 /* --------- */
@@ -285,12 +308,16 @@ button:focus {
 
 .home-section {
   position: relative;
-  z-index: -1;
+  /* z-index: -1; */
   /* background-image: var(--image-gradient), url(./Assets/home-bg.jpg); */
   background-position: top center;
   background-repeat: no-repeat;
   padding-bottom: 30px !important;
   padding-top: 30px !important;
+}
+
+.journey-slide {
+  position: relative;
 }
 
 .home-content {
@@ -305,7 +332,12 @@ button:focus {
 }
 
 .heading-name {
-  font-size: 2.5em !important;
+  font-size: 3em !important;
+  padding-left: 45px !important;
+}
+
+.heading-subname {
+  font-size: 1.5em !important;
   padding-left: 45px !important;
 }
 

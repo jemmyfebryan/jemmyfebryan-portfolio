@@ -32,19 +32,20 @@ function AboutCard() {
         >
           <p className="mobile-font" style={{ textAlign: "justify" }}>
             Hi, I am <span className="green">Jemmy Febryan </span>
-            <br /> I am an under-graduate student in Mathematics at Brawijaya University.
+            <br /> I am an under-graduate student in Mathematics at Brawijaya University with experience and skills in data science and human resources, demonstrating strong analytical thinking, team collaboration, project leadership, and organization development. Capable of performing tasks in the scope of Machine Learning and Cloud Computing especially in Natural Language Processing and Computer Vision. A generalist person who quickly learns new things, manages time effectively, is responsible, and enjoys challenges.
             <br />
-            Additionally, I am currently part of <a href="https://braincore.id/" target="_blank" rel="noreferrer" style={linkStyle}>Braincore.id</a> as a Data Scientist and Content Writer Volunteer at <a href="https://teenuplive.com/" target="_blank" rel="noreferrer" style={TeenupliveStyle}>Teenuplive</a>.
+            <br />
+            Additionally, I am currently part of <a href="https://braincore.id/" target="_blank" rel="noreferrer" style={linkStyle}>Braincore.id</a> as a Chief Human Resources Officer.
             <br />
             <br />
             These are my area of interests:
           </p>
           <ul className="mobile-font">
             <li className="about-activity">
-              - Business Analytics
+              - HR Analytics
             </li>
             <li className="about-activity">
-              - HR Analytics
+              - Business Analytics
             </li>
             <li className="about-activity">
               - Natural Language Processing

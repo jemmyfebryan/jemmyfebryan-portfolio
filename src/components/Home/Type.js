@@ -5,10 +5,10 @@ function Type() {
   return (
     <Typewriter
       onInit={(typewriter) => {
-        typewriter.typeString('On DVep lvfmetn')
+        typewriter.typeString('Still devedekdpwfkfw4')
           .pauseFor(600)
           .deleteChars(11)
-          .typeString('evelopment . . .')
+          .typeString('loping until today . . .')
           .pauseFor(3000)
           .deleteAll()
           .start();

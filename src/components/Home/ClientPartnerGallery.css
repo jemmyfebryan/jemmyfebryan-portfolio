@@ -1,0 +1,26 @@
+.client-partner-gallery {
+    width: 100%;
+    max-width: 80%; /* Adjust max-width as needed */
+    margin: 0 auto; /* Center the gallery */
+  }
+  
+.image-grid {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.image-container {
+    flex: 0 0 calc(18% - 10px); /* 20% width with 10px margin */
+    margin: 7px;
+    height: 100px; /* Set the height */
+    display: flex;
+    justify-content: center; /* Center image horizontally */
+    align-items: center; /* Center image vertically */
+}
+
+.image-container img {
+    width: auto; /* Allow image width to adjust automatically */
+    height: 100px; /* Make image height 100% of container height */
+    object-fit: contain; /* Maintain aspect ratio */
+}

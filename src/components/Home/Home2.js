@@ -1,6 +1,7 @@
 import React from "react";
 import { Container, Row, Col } from "react-bootstrap";
 import { Link } from "react-router-dom"
+import JourneySlide from "./journeySlide";
 // import Nav from "react-bootstrap/Nav";
 // import myImg from "../../Assets/avatar.svg";
 // import Tilt from "react-parallax-tilt";
@@ -10,10 +11,12 @@ import {
   AiFillInstagram,
 } from "react-icons/ai";
 import { FaLinkedinIn } from "react-icons/fa";
+import ClientPartners from "./ClientPartners";
 
 function Home2() {
   return (
     <Container fluid className="home-about-section" id="about">
+      
       <Container>
         <hr
           className="horizontal-line"
@@ -61,14 +64,17 @@ function Home2() {
             </p>
           </Col>
         </Row>
+
+        <ClientPartners />
+
         <hr
           className="horizontal-line"
           style={{
-            marginTop: "100px",
+            marginTop: "125px",
             marginBottom: "100px"
           }}
         />
-        <Row>
+        <Row style={{marginBottom: "25px"}}>
           <Col md={12} className="home-about-social">
             <h1>TO GET IN CONTACT</h1>
             <p>
@@ -87,7 +93,7 @@ function Home2() {
               </li>
               <li className="social-icons">
                 <a
-                  // href="/"
+                  href="https://twitter.com/Jemmy_AI"
                   target="_blank"
                   rel="noreferrer"
                   className="icon-colour  home-social-icons"
