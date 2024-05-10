@@ -17,7 +17,7 @@ const journeyData = [
     "date": "2024/02",
     "description": "Conducted analysis on waste sources and generation in Magelang City by correlating waste with population count, rainfall, and number of neighborhood units. Utilized AI methods to predict waste generation in each subdistrict until the conclusion of 2024, yielding satisfactory outcomes for the client.",
     "noRef": false,
-    "refLink": ["https://waste-management-magelang-muf7kziviq-as.a.run.app/"],
+    "refLink": ["https://waste-management-magelang-atslcoc5ya-as.a.run.app"],
     "refName": ["View Website"],
     "tags": ["Python", "NLP", "AI/ML"]
   },
@@ -72,8 +72,8 @@ const journeyData = [
     "date": "2023/11",
     "description": "Together with the Braincore Team, I contribute to the creation of a web-based analytics system for calculating basketball player efficiency ratings (PER) in FIBA. This analytics platform is developed using Python, and the web interface is powered by Flask, Python, and a bit of JavaScript.",
     "noRef": false,
-    "refLink": ["https://mvpod.megalogic.id/", "https://github.com/megalogic-id/MVPod"],
-    "refName": ["View Website", "GitHub"],
+    "refLink": ["https://mvpod-atslcoc5ya-uc.a.run.app"],
+    "refName": ["View Website"],
     "tags": ["Python", "JavaScript", "Website"]
   },
   {

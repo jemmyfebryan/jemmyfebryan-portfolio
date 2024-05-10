@@ -1,7 +1,5 @@
 import React from 'react';
 import './ClientPartnerGallery.css'; // Import CSS file for styling
-import { journeyData } from "../Projects/journey.js";
-import { Link } from 'react-router-dom';
 
 const ClientPartners = () => {
   // Assuming you have an array of image URLs for your clients and partners
