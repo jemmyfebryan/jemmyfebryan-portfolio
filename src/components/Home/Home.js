@@ -4,9 +4,6 @@ import homeLogo from "../../Assets/home-main.png";
 import Particle from "../Particle";
 import Home2 from "./Home2";
 import Type from "./Type";
-import { Link } from "react-router-dom";
-import JourneySlide from "./journeySlide";
-import ClientPartners from "./ClientPartners";
 
 function Home() {
 
