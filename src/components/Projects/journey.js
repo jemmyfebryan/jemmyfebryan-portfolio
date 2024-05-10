@@ -17,8 +17,8 @@ const journeyData = [
     "date": "2024/02",
     "description": "Conducted analysis on waste sources and generation in Magelang City by correlating waste with population count, rainfall, and number of neighborhood units. Utilized AI methods to predict waste generation in each subdistrict until the conclusion of 2024, yielding satisfactory outcomes for the client.",
     "noRef": false,
-    "refLink": ["https://waste-management-magelang-atslcoc5ya-as.a.run.app"],
-    "refName": ["View Website"],
+    "refLink": ["https://waste-management-magelang-atslcoc5ya-as.a.run.app", "https://github.com/jemmyfebryan/waste-management-magelang"],
+    "refName": ["View Website", "Github"],
     "tags": ["Python", "NLP", "AI/ML"]
   },
   {
