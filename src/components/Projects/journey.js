@@ -8,7 +8,7 @@ const journeyData = [
     "noRef": false,
     "refLink": ["https://sales-recapitulation-analysis-atslcoc5ya-as.a.run.app", "https://github.com/jemmyfebryan/sales-recapitulation-analysis"],
     "refName": ["View Website", "Github"],
-    "tags": ["Python", "AI/ML"]
+    "tags": ["Python", "AI/ML", "Website"]
   },
   {
     "id": 16,
@@ -19,7 +19,7 @@ const journeyData = [
     "noRef": false,
     "refLink": ["https://waste-management-magelang-atslcoc5ya-as.a.run.app", "https://github.com/jemmyfebryan/waste-management-magelang"],
     "refName": ["View Website", "Github"],
-    "tags": ["Python", "NLP", "AI/ML"]
+    "tags": ["Python", "NLP", "AI/ML", "Website"]
   },
   {
     "id": 15,
