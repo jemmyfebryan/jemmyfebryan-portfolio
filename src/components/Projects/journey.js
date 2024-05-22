@@ -1,5 +1,16 @@
 const journeyData = [
   {
+    "id": 18,
+    "title": "Bangkit Academy 2024 Company Capstone Advisor",
+    "imgPath": "https://i.imgur.com/Zjkz1rS.jpeg",
+    "date": "2024/05",
+    "description": "Chosen by Bizzagi as the Capstone Advisor for the prestigious Bangkit Academy program, a collaboration by Google, Tokopedia, Gojek, and Traveloka. I guide and mentor a talented team through a two-month project on the Aspect Based Sentiment Analysis case, providing strategic direction, fostering collaboration, and ensuring project success. I am dedicated to empowering my mentees and confident in their potential to excel.",
+    "noRef": true,
+    "refLink": [],
+    "refName": [],
+    "tags": ["Python", "AI/ML"]
+  },
+  {
     "id": 17,
     "title": "Restaurant Customer and Favorite Menu Prediction",
     "imgPath": "https://i.imgur.com/eYQWKkq.jpeg",
