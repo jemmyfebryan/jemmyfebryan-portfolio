@@ -4,10 +4,10 @@ const journeyData = [
     "title": "Restaurant Customer and Favorite Menu Prediction",
     "imgPath": "https://i.imgur.com/eYQWKkq.jpeg",
     "date": "2024/02",
-    "description": "Utilized LSTM models for analyzing historical ordering patterns, customer preferences, and preferred table selections, facilitating real-time prediction of favored menu items at a restaurant in Magelang City. Enhanced restaurant operations and customer satisfaction through personalized recommendations aligned with individual tastes and dining preferences. Additionally, created a user-friendly interface with Python Tkinter to provide seamless access to the predictive capabilities for restaurant staff.",
-    "noRef": true,
-    "refLink": [],
-    "refName": [],
+    "description": "Implemented LSTM models to analyze historical ordering patterns, customer preferences, and table selections, enabling real-time prediction of popular menu items at a Magelang City restaurant. Improved operations and customer satisfaction with personalized recommendations. Developed a Python Tkinter interface for easy staff access to predictive insights.",
+    "noRef": false,
+    "refLink": ["https://sales-recapitulation-analysis-atslcoc5ya-as.a.run.app", "https://github.com/jemmyfebryan/sales-recapitulation-analysis"],
+    "refName": ["View Website", "Github"],
     "tags": ["Python", "AI/ML"]
   },
   {
