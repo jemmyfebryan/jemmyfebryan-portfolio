@@ -1,5 +1,27 @@
 const journeyData = [
   {
+    "id": 20,
+    "title": "News Classification",
+    "imgPath": "https://i.imgur.com/G8JKnuK.png",
+    "date": "2024/06",
+    "description": "Developed a machine learning model to classify news content into 39 categories with 97.67% validation accuracy. Used BERT for text embeddings and a Bi-LSTM for classification. Deployed the model using Flask to provide a user-friendly web interface. Demonstrated proficiency in Python, NLP, and web deployment.",
+    "noRef": false,
+    "refLink": ["https://nc.jemmyfebryan.site/"],
+    "refName": ["View Website"],
+    "tags": ["Python", "AI/ML", "NLP"]
+  },
+  {
+    "id": 19,
+    "title": "2nd Place National FindIT Data Analytics Competition 2024",
+    "imgPath": "https://i.imgur.com/BQ0vkJW.png",
+    "date": "2024/05",
+    "description": "Secured 2nd place in the FindIT Data Analytics Competition 2024, held at the University of Gajahmada. Leveraged a Weighted Ensemble model to predict retail customer behavior in marketing, and delivered a strong presentation to a panel of judges. This achievement highlights my ability to apply advanced data analytics techniques to real-world problems and effectively communicate results.",
+    "noRef": false,
+    "refLink": ["https://drive.google.com/file/d/1fClTctE99SzOq-daJg8GLgaLDwVGHihi/view?usp=sharing", "https://aigeniuses.site/"],
+    "refName": ["View Certificate", "View Website"],
+    "tags": ["Python", "AI/ML", "Certificate"]
+  },
+  {
     "id": 18,
     "title": "Bangkit Academy 2024 Company Capstone Advisor",
     "imgPath": "https://i.imgur.com/Zjkz1rS.jpeg",
@@ -8,7 +30,7 @@ const journeyData = [
     "noRef": true,
     "refLink": [],
     "refName": [],
-    "tags": ["Python", "AI/ML"]
+    "tags": ["Python", "AI/ML", "NLP"]
   },
   {
     "id": 17,
@@ -17,7 +39,7 @@ const journeyData = [
     "date": "2024/02",
     "description": "Implemented LSTM models to analyze historical ordering patterns, customer preferences, and table selections, enabling real-time prediction of popular menu items at a Magelang City restaurant. Improved operations and customer satisfaction with personalized recommendations. Developed a Python Tkinter interface for easy staff access to predictive insights.",
     "noRef": false,
-    "refLink": ["https://sales-recapitulation-analysis-atslcoc5ya-as.a.run.app", "https://github.com/jemmyfebryan/sales-recapitulation-analysis"],
+    "refLink": ["https://sra.jemmyfebryan.site", "https://github.com/jemmyfebryan/sales-recapitulation-analysis"],
     "refName": ["View Website", "Github"],
     "tags": ["Python", "AI/ML", "Website"]
   },
@@ -28,7 +50,7 @@ const journeyData = [
     "date": "2024/02",
     "description": "Conducted analysis on waste sources and generation in Magelang City by correlating waste with population count, rainfall, and number of neighborhood units. Utilized AI methods to predict waste generation in each subdistrict until the conclusion of 2024, yielding satisfactory outcomes for the client.",
     "noRef": false,
-    "refLink": ["https://waste-management-magelang-atslcoc5ya-as.a.run.app", "https://github.com/jemmyfebryan/waste-management-magelang"],
+    "refLink": ["https://wmm.jemmyfebryan.site", "https://github.com/jemmyfebryan/waste-management-magelang"],
     "refName": ["View Website", "Github"],
     "tags": ["Python", "NLP", "AI/ML", "Website"]
   },
@@ -49,9 +71,9 @@ const journeyData = [
     "imgPath": "https://i.imgur.com/6m5ltEl.jpeg",
     "date": "2023/12",
     "description": "Developed an Artificial Intelligence model leveraging the OpenAI API to efficiently parse curriculum vitae information. This was achieved by utilizing advanced Natural Language Processing techniques provided by OpenAI's powerful models. The model was integrated into a Parser API developed using Flask and deployed on Google Cloud Run for seamless accessibility and scalability.",
-    "noRef": true,
-    "refLink": [],
-    "refName": [],
+    "noRef": false,
+    "refLink": ["https://cvparser.jemmyfebryan.site"],
+    "refName": ["View Website"],
     "tags": ["Python", "NLP", "AI/ML", "HR"]
   },
   {
@@ -83,7 +105,7 @@ const journeyData = [
     "date": "2023/11",
     "description": "Together with the Braincore Team, I contribute to the creation of a web-based analytics system for calculating basketball player efficiency ratings (PER) in FIBA. This analytics platform is developed using Python, and the web interface is powered by Flask, Python, and a bit of JavaScript.",
     "noRef": false,
-    "refLink": ["https://mvpod-atslcoc5ya-uc.a.run.app"],
+    "refLink": ["https://mvpod.jemmyfebryan.site"],
     "refName": ["View Website"],
     "tags": ["Python", "JavaScript", "Website"]
   },
@@ -104,9 +126,9 @@ const journeyData = [
     "imgPath": "https://i.imgur.com/Z90dwhH.png",
     "date": "2023/10",
     "description": "I designed and built my own personal website, handling both the front-end and back-end using the MERN stack, which includes MongoDB, Express.js, React.js, and Node.js. This website serves as a repository for my journey, recent projects, areas of expertise, and more.",
-    "noRef": true,
-    "refLink": [],
-    "refName": [],
+    "noRef": false,
+    "refLink": ["https://jemmyfebryan.site"],
+    "refName": ["View Website"],
     "tags": ["JavaScript", "Website"]
   },
   {
