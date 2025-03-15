@@ -3,7 +3,7 @@ import { Container, Row, Col, Button } from "react-bootstrap";
 import { useLocation } from 'react-router-dom';
 import ProjectCard from "./ProjectCards";
 import Particle from "../Particle";
-import { journeyData } from "./journey.js";
+// import { journeyData } from "./journey.js";
 // import { FirstRandText, SecondRandText } from './JFtext.js'
 
 function Projects() {
@@ -20,7 +20,13 @@ function Projects() {
     if (!hasMounted.current) {
       const fetchProjectsData = async () => {
         try {
-          const data = journeyData;
+          const response = await fetch(`${process.env.PUBLIC_URL}/journeyList.json`);
+          // const response = await fetch("https://anacoda_public.storage.googleapis.com/jemmy-portfolio/public/journeyList.json");
+          // if (!response.ok) {
+          //   throw new Error(`HTTP error! status: ${response.status}`);
+          // }
+          const data = await response.json();
+          // const data = journeyData;
           setAllProjects(data);
           const filtered = data.filter((project) =>
             selectedTag ? project.tags.includes(selectedTag) : true

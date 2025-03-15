@@ -1,4 +1,4 @@
-const journeyData = [
+[
   {
     "id": 20,
     "title": "News Classification",
@@ -132,16 +132,6 @@ const journeyData = [
     "tags": ["Python", "NLP", "AI/ML", "Certificate"]
   },
   {
-    "id": 4,
-    "title": "4th Place National IFEST Data Analytics Competition 2023",
-    "date": "2023/09",
-    "description": "I devised a sentiment analysis model for detecting five emotions – Anger, Fear, Joy, Happiness, and Sadness – in Tweets. I conducted a comparative analysis, pitting my hybrid Transformer+CNN model against alternative models, ultimately achieving an impressive validation accuracy of 85.71%.",
-    "noRef": true,
-    "refLink": [],
-    "refName": [],
-    "tags": ["Python", "NLP", "AI/ML", "Certificate"]
-  },
-  {
     "id": 11,
     "title": "RISTEK Datathon 2023 Participant",
     "imgPath": "https://i.imgur.com/roUlqwD.jpg",
@@ -186,5 +176,3 @@ const journeyData = [
     "tags": ["Certificate"]
   }
 ]
-
-export { journeyData }

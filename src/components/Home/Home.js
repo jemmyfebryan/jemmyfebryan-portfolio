@@ -31,9 +31,13 @@ function Home() {
               </h1>
               
               <h4 className="heading-subname">
-                Chief Human Resources Officer at{" "}
+                {/* Chief Human Resources Officer at{" "}
                 <a href="https://braincore.id/" target="_blank" rel="noreferrer" style={linkStyle}>
                   Braincore.id
+                </a> */}
+                Ex-AI Engineer at{" "}
+                <a href="https://bribrain.bri.co.id/" target="_blank" rel="noreferrer" style={linkStyle}>
+                  PT. Bank Rakyat Indonesia Tbk.
                 </a>
               </h4>
 
@@ -42,14 +46,23 @@ function Home() {
               </div>
             </Col>
 
-            <Col md={5} style={{ paddingBottom: 20 }}>
+            <Col md={5} className="d-flex justify-content-center align-items-center margin-top-custom"
+              style={{ paddingBottom: 20 }}>
               <img
                 src={homeLogo}
                 alt="home pic"
                 className="img-fluid"
-                style={{ maxHeight: "450px" }}
+                style={{
+                  maxHeight: "350px",
+                  borderRadius: "15px",
+                  boxShadow: "0px 4px 15px rgba(0, 0, 0, 0.3)",
+                  border: "3px solid #e35ef5",
+                  // position: "relative",
+                  // zIndex: 0
+                }}
               />
             </Col>
+
               {/* <p className="home-about-description home-about-body purple" style={{textAlign: "justify"}}>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p> */}
           </Row>
         </Container>

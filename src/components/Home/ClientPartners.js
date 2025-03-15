@@ -4,6 +4,7 @@ import './ClientPartnerGallery.css'; // Import CSS file for styling
 const ClientPartners = () => {
   // Assuming you have an array of image URLs for your clients and partners
   const clientPartnerImages = [
+    { imageUrl: 'clientsandpartners/bri.png', link: "https://www.bri.co.id/" },
     { imageUrl: 'clientsandpartners/ub.png', link: "https://ub.ac.id/" },
     { imageUrl: 'clientsandpartners/braincore.png', link: "https://braincore.id" },
     { imageUrl: 'clientsandpartners/lima.jpeg', link: "https://ligamahasiswa.com/" },

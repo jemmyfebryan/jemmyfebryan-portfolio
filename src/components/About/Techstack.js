@@ -28,6 +28,7 @@ import {
   SiScikitlearn,
   SiNextdotjs,
   SiTableau,
+  SiPytorch,
   SiRedis,
   SiFirebase,
   SiSolidity,
@@ -61,6 +62,10 @@ function Techstack() {
       <Col xs={4} md={2} className="green tech-icons" onClick={() => handleColumnClick("/journey?q=Python")}>
         <DiPython />
         <br/><p style={{fontSize: "1rem"}}>Python</p>
+      </Col>
+      <Col xs={4} md={2} className="tech-icons">
+        <SiPytorch />
+        <br/><p style={{fontSize: "1rem"}}>PyTorch</p>
       </Col>
       <Col xs={4} md={2} className="tech-icons">
         <SiTensorflow />
@@ -117,11 +122,11 @@ function Techstack() {
         <CgCPlusPlus />
         <br/><p style={{fontSize: "1rem"}}>C++</p>
       </Col>
-      <Col xs={4} md={2} className="green tech-icons" onClick={() => handleColumnClick("/journey?q=Mandarin")}>
-        <IoLanguage />
+      {/* <Col xs={4} md={2} className="green tech-icons" onClick={() => handleColumnClick("/journey?q=Mandarin")}> */}
+        {/* <IoLanguage /> */}
         {/* <img src={mandarinIcon} width="100rem" style={{fill: "green", filter: "invert(1)"}}/> */}
-        <br/><p style={{fontSize: "1rem"}}>Mandarin</p>
-      </Col>
+        {/* <br/><p style={{fontSize: "1rem"}}>Mandarin</p> */}
+      {/* </Col> */}
       {/* <Col xs={4} md={2} className="tech-icons">
         <SiNextdotjs />
       </Col> */}

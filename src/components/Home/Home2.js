@@ -32,6 +32,32 @@ function Home2() {
           }}
         >
           <Col md={12}>
+            {/* <h1 style={{ fontSize: "2.6em", paddingBottom: "50px"}}>
+              JEMMY <Link to="/about" className="purple" style={{textDecoration: 'none'}}>FINANCE</Link>
+            </h1> */}
+            <h1 style={{ fontSize: "2.6em", paddingBottom: "50px"}}>
+              JEMMY <a href="https://finance.jemmyfebryan.com" className="purple" style={{textDecoration: 'none'}}>FINANCE</a>
+            </h1>
+            <p className="mobile-font"> {/* style={{textAlign: "justify"}} */}
+              Explore my expertise in finance, including investment and portfolio management. Visit <a href="https://finance.jemmyfebryan.com" className="purple" style={{textDecoration: 'none'}}>Jemmy Finance</a>.
+            </p>
+          </Col>
+        </Row>
+        <hr
+          className="horizontal-line"
+          style={{
+            marginTop: "100px",
+            marginBottom: "100px"
+          }}
+        />
+        <Row
+          className="home-about-description"
+          style={{
+            marginLeft: "10%",
+            marginRight: "10%"
+          }}
+        >
+          <Col md={12}>
             <h1 style={{ fontSize: "2.6em", paddingBottom: "50px"}}>
               KNOW <Link to="/about" className="purple" style={{textDecoration: 'none'}}>ABOUT</Link> ME
             </h1>

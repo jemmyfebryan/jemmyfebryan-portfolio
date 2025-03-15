@@ -34,13 +34,16 @@ function AboutCard() {
             Hi, I am <span className="green">Jemmy Febryan </span>
             <br /> I am an under-graduate student in Mathematics at Brawijaya University with experience and skills in data science and human resources, demonstrating strong analytical thinking, team collaboration, project leadership, and organization development. Capable of performing tasks in the scope of Machine Learning and Cloud Computing especially in Natural Language Processing and Computer Vision. A generalist person who quickly learns new things, manages time effectively, is responsible, and enjoys challenges.
             <br />
-            <br />
+            {/* <br />
             Additionally, I am currently part of <a href="https://braincore.id/" target="_blank" rel="noreferrer" style={linkStyle}>Braincore.id</a> as a Chief Human Resources Officer.
-            <br />
+            <br /> */}
             <br />
             These are my area of interests:
           </p>
           <ul className="mobile-font">
+            <li className="about-activity">
+              - Finance
+            </li>
             <li className="about-activity">
               - HR Analytics
             </li>

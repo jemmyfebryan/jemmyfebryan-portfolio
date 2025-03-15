@@ -30,7 +30,7 @@ html {
   border: 3px solid #d47cc6;
 }
 
-@media screen and (max-width: 767px) {
+@media screen and (max-width: 768px) {
   .mobile-font {
     font-size: 0.8rem
   }
@@ -192,7 +192,7 @@ button:focus {
   opacity: 0.9 !important;
 }
 
-@media (max-width: 767px) {
+@media (max-width: 768px) {
   .navbar {
     padding: 1rem 2rem !important;
     font-size: 1.4rem !important;
@@ -221,7 +221,7 @@ button:focus {
   padding: 0.8rem 1rem !important;
 }
 
-@media (max-width: 767px) {
+@media (max-width: 768px) {
   .nav-link {
     padding: 0.7rem 1rem !important;
   }
@@ -313,7 +313,7 @@ button:focus {
   background-position: top center;
   background-repeat: no-repeat;
   padding-bottom: 30px !important;
-  padding-top: 30px !important;
+  padding-top: 5px !important;
 }
 
 .journey-slide {
@@ -341,9 +341,25 @@ button:focus {
   padding-left: 45px !important;
 }
 
-.main-name {
-  color: #d16fc1;
+/* Default margin for larger screens */
+.margin-top-custom {
+  margin-top: 2% !important;
 }
+
+/* Adjust margin-top for phones (max-width: 576px is Bootstrap's breakpoint for phones) */
+@media (max-width: 768px) {
+  .margin-top-custom {
+    margin-top: 20% !important;
+  }
+}
+
+/* Adjust margin-top for phones (max-width: 576px is Bootstrap's breakpoint for phones) */
+@media (max-width: 768px) {
+  .main-image {
+    margin-top: 20%;
+  }
+}
+
 
 .logo-name {
   color: #ffffff;
@@ -359,7 +375,7 @@ button:focus {
   color: #f7d1f0 !important;
 }
 
-@media (max-width: 767px) {
+@media (max-width: 768px) {
   .Typewriter__wrapper {
     font-size: 1.4em !important;
     font-weight: 500 !important;
@@ -375,7 +391,7 @@ button:focus {
   padding-top: 9em !important;
 }
 
-@media (max-width: 767px) {
+@media (max-width: 768px) {
   .myAvtar {
     padding-top: 2em !important;
     padding-bottom: 2em !important;
@@ -388,7 +404,7 @@ button:focus {
   padding-top: 70px !important;
 }
 
-@media (max-width: 767px) {
+@media (max-width: 768px) {
   .home-about-section {
     padding-bottom: 150px
   }
@@ -478,6 +494,7 @@ button:focus {
   bottom: 0 !important;
   padding-top: 8px !important;
   padding-bottom: 6px !important ;
+  z-index: 9999;
 }
 .footer-copywright {
   text-align: center !important;
@@ -488,7 +505,7 @@ button:focus {
   text-align: center !important;
 }
 
-@media (max-width: 767px) {
+@media (max-width: 768px) {
   .footer-copywright {
     text-align: center !important;
   }
@@ -653,7 +670,7 @@ button:focus {
   transition: all 0.5s ease 0s !important;
 }
 
-@media (max-width: 767px) {
+@media (max-width: 768px) {
   .tech-icons {
     margin: 10px !important;
   }
@@ -681,7 +698,7 @@ button:focus {
   padding-left: 1px !important;
 }
 
-@media (max-width: 767px) {
+@media (max-width: 768px) {
   .about-img {
     padding-top: 0 !important;
   }
@@ -727,7 +744,7 @@ button:focus {
   padding-left: 80px !important;
 }
 
-@media (max-width: 767px) {
+@media (max-width: 768px) {
   .resume-left {
     padding-right: 15px !important;
     padding-left: 15px !important;
