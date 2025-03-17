@@ -1,5 +1,39 @@
 [
   {
+    "id": 23,
+    "title": "Jemmy Finance",
+    "imgPath": "https://i.imgur.com/XeJXrjY.png",
+    "date": "2024/03",
+    "description": "Developed a website for a finance application focused on investment and portfolio management. The website showcases my expertise in finance and its practical implementation in real-world use cases.",
+    "noRef": false,
+    "refLink": ["https://finance.jemmyfebryan.com/"],
+    "refName": ["View Website"],
+    "tags": ["Python", "Website"]
+  },
+  {
+    "id": 22,
+    "title": "Airport Stand Contact Prediction",
+    "imgPath": "https://i.imgur.com/xhlGmyH.jpeg",
+    "date": "2024/08",
+    "description": "Developed a Random Forest-based application to predict and optimize airport stand contact, automating aircraft assignments to maximize stand utilization for the customer. Improved the stand contact rate from 89% without the model to 96% with the model.",
+    "noRef": false,
+    "refLink": ["https://asp.jemmyfebryan.com/"],
+    "refName": ["View Website"],
+    "tags": ["Python", "AI/ML", "Website"]
+  },
+  {
+    "id": 21,
+    "title": "English Conversation App",
+    "imgPath": "https://i.imgur.com/UEVqSF4.png",
+    "date": "2024/06",
+    "description": "An English learning app where users can chat with an AI. At the end of the conversation, the AI provides feedback and scores on various aspects, including grammar and vocabulary.",
+    "noRef": false,
+    "refLink": ["https://eca.jemmyfebryan.com/"],
+    "refName": ["View Website"],
+    "tags": ["Python", "AI/ML", "NLP", "Website"]
+
+  },
+  {
     "id": 20,
     "title": "News Classification",
     "imgPath": "https://i.imgur.com/G8JKnuK.png",
@@ -8,7 +42,7 @@
     "noRef": false,
     "refLink": ["https://nc.jemmyfebryan.com/"],
     "refName": ["View Website"],
-    "tags": ["Python", "AI/ML", "NLP"]
+    "tags": ["Python", "AI/ML", "NLP", "Website"]
   },
   {
     "id": 19,
