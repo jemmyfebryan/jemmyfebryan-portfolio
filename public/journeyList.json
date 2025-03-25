@@ -16,9 +16,9 @@
     "imgPath": "https://i.imgur.com/xhlGmyH.jpeg",
     "date": "2024/08",
     "description": "Developed a Random Forest-based application to predict and optimize airport stand contact, automating aircraft assignments to maximize stand utilization for the customer. Improved the stand contact rate from 89% without the model to 96% with the model.",
-    "noRef": false,
-    "refLink": ["https://asp.jemmyfebryan.com/"],
-    "refName": ["View Website"],
+    "noRef": true,
+    "refLink": [],
+    "refName": [],
     "tags": ["Python", "AI/ML", "Website"]
   },
   {
